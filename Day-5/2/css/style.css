@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: lawngreen;
+    position: relative;
+    /* transition: 0.5s; */
+}
+
+.container:hover{
+    top: 20px;
+    left: 20px;
+}
+
+.montainer{
+    width: 200px;
+    height: 200px;
+    background: cornflowerblue;
+    margin: 200px auto;
+    position: relative;
+}
+
+.montainer-cild{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    transition: 0.5s;
+}
+
+.montainer:hover > .montainer-cild{
+    top: 150px;
+    left: 150px;
+}
+.montainer-cild2{
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    transition: 0.5s;
+}
+
+.montainer:hover > .montainer-cild2{
+    top: 150px;
+    right: 150px;
+}
+
+.g2p{
+    width: max-content;
+    padding: 8px 16px;
+    background: teal;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.g2p:hover{
+    
+}
+
+.dhaka{
+    width: 200px;
+    height: 600px;
+    margin: 20px auto 1200px;
+    background: lightblue;
+}
+
+.dhanmondi{
+    width: 200px;
+    height: 600px;
+    background: lightgoldenrodyellow;
+    position: sticky;
+    top: 20px;
+    left: 0;
+}

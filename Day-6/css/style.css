@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+
+}
+.red, .green {
+    width: 50%;
+    height: 400px;
+    background: url("../image/sky.jpg");
+    /* background: #000; */
+    block-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.red{
+    order: 2;
+}
+.green{
+    background: green;
+    color: white;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    order: 1;
+}
+
+.bd {
+    width: 100%;
+    background: yellow;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    font-weight: wrap;
+}
+
+.bd > div {
+    /* min-width: calc(50% - 10px); */
+    height: 400px;
+    background: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+    border-radius: 6px;
+    /* flex-shrink: 0; */
+}
+
+.child1 {
+    order: 3;
+    flex-basis: 300px;
+}
+
+.child2 {
+    order: 1;
+    flex-grow: 1;
+}
+
+.child3 {
+    order: 4;
+    flex-grow: 2;
+}
+
+.child4 {
+    order: 2;
+}
+
