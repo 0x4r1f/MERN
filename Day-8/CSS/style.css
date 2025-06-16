@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 800px;
+    margin: 20px auto;
+    border: 1px solid black;
+    display: table;
+}
+
+.row{
+    display: table-row;
+}
+
+.col{
+    display: table-cell;
+    padding: 8px 12px;
+    border-bottom: 1px solid black;
+}
+
+.col:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.Alex{
+    width: 300px;
+    height: 300px;
+    background: url(../image/1668603388541.jpg);
+    background-size: cover;
+    margin: 20px auto;
+    border: 1px solid black;
+    transition: transform 0.5s linear;
+}
+
+.Alex:hover{
+    /* transform: translateX(20px);
+    transform: translateY(20px); */
+    /* transform: translate(20px, 20px); */
+    transform: matrix(1.2, 0.2, 0.2, 0.7, 20, 20);
+    /* matrix(scaleX:(), skewY(), scaleY(),translateX(), translateY() */
+}
+
+.Hels{
+    width: 400px;
+    height: 400px;
+    background: url(../image/goat.jpg);
+    background-size: cover;
+    margin: 20px auto;
+    /* animation-name: HelsAnimation;
+    animation-duration: 1s; */
+    animation: HelsAnimation 5s infinite linear ;
+}
+
+@keyframes HelsAnimation {
+    0% {
+        background: url(../image/1668603388541.jpg);
+        background-size: cover;
+        transform: rotate(0deg);
+        left: -400px;
+    }
+    50% {
+        background: url(../image/goat.jpg);
+        background-size: cover;
+        transform: rotate(180deg);
+        left: calc(50% - 200px);
+    }
+    100% {
+        background: url(../image/1668603388541.jpg);
+        background-size: cover;
+        transform: rotate(360deg);
+    }
+}
